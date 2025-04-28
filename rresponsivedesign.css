@@ -1,0 +1,141 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: linen;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Section Styles */
+section {
+    width: 80%;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+img {
+    width: 60%;
+    height: auto;
+    border-radius: 10px; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    margin: 20px 0;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    padding-top: 10px;
+}
+
+h1, h2 {
+    color: #333;
+    margin-top: 20px;
+    font-size: 2em;
+    padding: 10px;
+}
+
+.intro, #yoga-benefits {
+    color: #333;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+/* Responsive Design - Media Queries */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2em;
+    }
+
+    nav ul {
+        padding: 10px;
+    }
+
+    img {
+        width: 90%;
+    }
+
+    section {
+        width: 90%;
+    }
+}
+
